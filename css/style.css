@@ -1,0 +1,60 @@
+body{
+    background-color: white;
+    margin: 0px;
+    font-family: 'Helvetica';
+}
+
+#header-judul{
+    max-width: 50%;
+    margin: 0px auto ;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20%;
+    font-family: 'Helvetica';
+    /* box-shadow: 1px 2px 6px 1px rgb(62, 157, 211); */
+}
+
+form{
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, 0.301); */
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.144);
+}
+
+#judul{
+    color: white;
+}
+#deskripsi-judul{
+    color: white;
+}
+
+form{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content:space-evenly;
+}
+
+#button-functionality{
+    display: flex;
+
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#list-todo{
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#list-element{
+    display:flex;
+    justify-content: space-between;
+    text-align: left;
+    border-bottom: 1px solid black;
+    margin: 10px auto;
+}
+

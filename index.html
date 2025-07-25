@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>ToDo List</h1>
+    <section id="header-judul">
+        <h1 id="judul">ToDo List</h1>
+        <p id="deskripsi-judul">Write your task in here</p>
+    </section>
+    
+    <form action="">
+        <input type="text" name="task" id="task-name" placeholder="Add a task">
+        <input type="date" name="date" id="task-date">
+        <input id="add" type="submit" value="submit" hidden>
+        <label for="add"><img src="svg/add_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+    </form>
+    <div id="button-functionality">
+        <button><dfn title="delete-all">
+            <img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+            <button><dfn title="filter"><img src="svg/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></dfn></button>
+        </dfn>
+    </div>
+    <section id="list-todo">
+        <h3>Task List</h3>
+        <div id="list-element">
+            <button class="button" id="check-button" hidden></button>
+                <label for="check-button"><img src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+            <p id="list-element-name">Tugas1</p>
+            <button class="button" id="delete-task" hidden>delete</button>
+                <label for="delete-task"><img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+        </div>
+
+        <div id="list-element">
+            <button class="button" id="check-button" hidden></button>
+                <label for="check-button"><img src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+            <p id="list-element-name">Tugas1</p>
+            <button class="button" id="delete-task" hidden>delete</button>
+                <label for="delete-task"><img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+        </div>
+        
+    </section>
 </body>
 </html>
