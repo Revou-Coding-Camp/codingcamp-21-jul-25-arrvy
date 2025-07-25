@@ -1,20 +1,22 @@
 body{
-    background-color: white;
+    background-color:azure;
     margin: 0px;
     font-family: 'Helvetica';
+    color: rgb(38, 139, 139);
 }
 
 #header-judul{
-    max-width: 50%;
-    margin: 0px auto ;
+    max-width: 50vh;
+    margin: 10px auto ;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgb(173, 235, 235);
     border-radius: 30px;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom: 20px;
     font-family: 'Helvetica';
-    /* box-shadow: 1px 2px 6px 1px rgb(62, 157, 211); */
+    box-shadow: 1px 2px 10px 1px rgba(62, 156, 211, 0.51);
 }
 
 form{
@@ -22,39 +24,108 @@ form{
     /* background-color: rgba(0, 0, 0, 0.301); */
     border-style:solid;
     border-color: rgba(0, 0, 0, 0.144);
-}
-
-#judul{
-    color: white;
-}
-#deskripsi-judul{
-    color: white;
-}
-
-form{
     padding: 10px;
     display: flex;
     align-content: center;
     justify-content:space-evenly;
+    max-width: 50vw;
+    margin: 0px auto;
 }
+
+.input{
+    border: 0px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#judul{
+    color:  rgb(38, 139, 139);
+}
+#deskripsi-judul{
+    color: rgb(38, 139, 139);
+}
+
 
 #button-functionality{
     display: flex;
 
-    margin-bottom: 10px;
-    margin-left: 10px;
+    
+    margin-left: 20px;
+    max-width: 50vw;
+    margin: 10px auto;
+    margin-top: 0px;
+
+    
+}
+
+
+#filter{
+    max-width: 20vw;
 }
 #list-todo{
     border: 1px solid rgba(0, 0, 0, 0.144);
     border-radius: 20px;
     padding-left: 20px;
+    padding-right: 20px;
+    max-width: 50vw;
+    margin: 0px auto;
+    background-color: rgb(173, 235, 235);
+    padding-bottom: 5vh;
+}
+h3{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
 }
 
-#list-element{
+.list-element{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     text-align: left;
     border-bottom: 1px solid black;
     margin: 10px auto;
+    font-weight: 500 ;
 }
 
+.list-element-table{
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    border: ;
+    
+}
+
+.list-element-name{
+    width: 15vw;
+    text-align: left;
+}
+
+.list-element-date{
+    width: 15vw;
+    text-align: right;
+    font-weight: 100;
+    font-size: smaller;
+}
+
+
+
+
+@media (max-width: 600px) {
+    form{
+     max-width: 50vh;
+    }
+    #button-functionality{
+        max-width: 50vh;
+        margin-left: 20px;
+    }
+
+    #filter{
+        
+    }
+
+    #list-todo{
+        max-width: 85%;
+    }
+    #delete-all{
+   
+}
+}

@@ -13,35 +13,54 @@
     </section>
     
     <form action="">
-        <input type="text" name="task" id="task-name" placeholder="Add a task">
-        <input type="date" name="date" id="task-date">
-        <input id="add" type="submit" value="submit" hidden>
-        <label for="add"><img src="svg/add_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+        <input type="text" name="task" id="task-name" placeholder="Add a task" class="input" autocomplete="off">
+        <input type="date" name="date" id="task-date"     class="input">
+        <!-- Kita gunakan button aja dibanding dengan submit, karena submit malah bikin website restart -->
+        <!-- <input id="add" type="submit" value="submit" hidden onclick="addTask()"> -->
+        <div>
+
+            <!-- Jangan lupa tambah type="button" -->
+            <button type="button" id="add" onclick="addTask()">
+                <label for="add"><img src="svg/add_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+            </button>
+        </div>
     </form>
+
     <div id="button-functionality">
-        <button><dfn title="delete-all">
-            <img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
-            <button><dfn title="filter"><img src="svg/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></dfn></button>
+        <button id="delete-all" hidden><dfn title="delete-all" onclick="removeAllTask()">
+        </button>
+                <label for="delete-all"> <img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+         <select id="filter" class="input"><dfn title="filter"></dfn>
+            <option value="" disabled selected>filter</option>
+            <option value="">none</option>
+            <option value="">status</option>
+        </select>
+                <label for="filter" ><img src="svg/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
         </dfn>
     </div>
     <section id="list-todo">
         <h3>Task List</h3>
-        <div id="list-element">
-            <button class="button" id="check-button" hidden></button>
-                <label for="check-button"><img src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
-            <p id="list-element-name">Tugas1</p>
-            <button class="button" id="delete-task" hidden>delete</button>
-                <label for="delete-task"><img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+
+        <div id="list-container">
+           <span>No Task Available</span>
+            <!-- <div class="list-element">
+                <button class="button" id="check-button" hidden></button>
+                    <label for="check-button"><img src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+                <table class="list-element-table">
+                    <td class="list-element-name">Tugas1</td>
+                    <td>|</td>
+                    <td class="list-element-date">tanggal</td>
+                </table>
+                <button class="button" id="delete-task" hidden>delete</button>
+                    <label for="delete-task"><img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+            </div> -->
+
         </div>
 
-        <div id="list-element">
-            <button class="button" id="check-button" hidden></button>
-                <label for="check-button"><img src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
-            <p id="list-element-name">Tugas1</p>
-            <button class="button" id="delete-task" hidden>delete</button>
-                <label for="delete-task"><img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
-        </div>
+    
         
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
