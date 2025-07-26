@@ -30,10 +30,11 @@
         <button id="delete-all" hidden><dfn title="delete-all" onclick="removeAllTask()">
         </button>
                 <label for="delete-all"> <img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
-         <select id="filter" class="input"><dfn title="filter"></dfn>
+         <select id="filter" class="input"  onchange="toggleFilter()"><dfn title="filter"></dfn>
             <option value="" disabled selected>filter</option>
-            <option value="">none</option>
-            <option value="">status</option>
+            <option value="none">none</option>
+            <option value="complete">complete</option>
+            <option value="incomplete">incomplete</option>
         </select>
                 <label for="filter" ><img src="svg/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
         </dfn>
@@ -44,14 +45,14 @@
         <div id="list-container">
            <span>No Task Available</span>
             <!-- <div class="list-element">
-                <button class="button" id="check-button" hidden></button>
-                    <label for="check-button"><img src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
+                <input type="checkbox" class="button" id="check-button" hidden></input>
+                    <label for="check-button"><img class="custom-checkbox-svg" src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
                 <table class="list-element-table">
                     <td class="list-element-name">Tugas1</td>
                     <td>|</td>
                     <td class="list-element-date">tanggal</td>
                 </table>
-                <button class="button" id="delete-task" hidden>delete</button>
+                <button class="button" id="delete-task" hidden ">delete</button>
                     <label for="delete-task"><img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
             </div> -->
 
@@ -61,6 +62,6 @@
         
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

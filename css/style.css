@@ -46,6 +46,10 @@ form{
     color: rgb(38, 139, 139);
 }
 
+#add{
+    border: 0px;
+    border-radius: 100px;
+}
 
 #button-functionality{
     display: flex;
@@ -58,7 +62,6 @@ form{
 
     
 }
-
 
 #filter{
     max-width: 20vw;
@@ -77,6 +80,17 @@ h3{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
 }
 
+
+input[type="checkbox"]:checked + label .custom-checkbox-svg {
+    /* filter: brightness(0) saturate(100%) invert(34%) sepia(99%) saturate(747%) hue-rotate(134deg) brightness(97%) contrast(92%); */
+    /* or any style you want */
+    background-image: url(../svg/check_circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+input[type="checkbox"]:checked ~ .list-element-table{
+    text-decoration: line-through;
+    opacity: 50%;
+}
 .list-element{
     display:flex;
     justify-content:space-between;
@@ -90,17 +104,16 @@ h3{
     width: 40vw;
     display: flex;
     justify-content: space-evenly;
-    border: ;
     
 }
 
 .list-element-name{
-    width: 15vw;
+    width: 30vw;
     text-align: left;
 }
 
 .list-element-date{
-    width: 15vw;
+    width: 10vw;
     text-align: right;
     font-weight: 100;
     font-size: smaller;
@@ -113,6 +126,15 @@ h3{
     form{
      max-width: 50vh;
     }
+    #task-name{
+        max-width: 30vh;
+    }
+
+    #task-date{
+        max-width: 10vh;
+    
+    }
+
     #button-functionality{
         max-width: 50vh;
         margin-left: 20px;
@@ -128,4 +150,15 @@ h3{
     #delete-all{
    
 }
+    .list-element-table{
+    width: 80vw;
+    
+}
+    .list-element-name{
+        width: 50vw;
+        padding-left: 1vh;
+    }
+    .list-element-date{
+        width: 30vw;
+    }
 }
