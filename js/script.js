@@ -37,7 +37,7 @@ function renderTask(){
         const checkboxId = `check-button-${index}`;
         taskList.innerHTML += `
         <li class = "list-element">
-        <input type="checkbox" class="button" id="${checkboxId}" ${task.complete ? "checked" : ""}></input>                
+        <input type="checkbox" class="button" id="${checkboxId}" ${task.complete ? "checked" : ""} hidden></input>                
                 <label id= "custom-checkbox" for="${checkboxId}" onchange="completeTask(${index})">
                     <img class="custom-checkbox-svg" src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </label>
@@ -93,7 +93,7 @@ function toggleFilter() {
         const checkboxId = `check-button-${index}`;
         taskList.innerHTML += `
         <li class="list-element">
-            <input type="checkbox" class="button" id="${checkboxId}" ${task.complete ? "checked" : ""} onchange="completeTask(${index})">
+            <input type="checkbox" class="button" id="${checkboxId}" ${task.complete ? "checked" : ""} hidden onchange="completeTask(${index})">
             <label for="${checkboxId}">
                 <img class="custom-checkbox-svg" src="svg/circle_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </label>
