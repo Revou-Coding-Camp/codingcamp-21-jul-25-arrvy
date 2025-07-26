@@ -27,17 +27,16 @@
     </form>
 
     <div id="button-functionality">
-        <button id="delete-all" hidden><dfn title="delete-all" onclick="removeAllTask()">
-        </button>
-                <label for="delete-all"> <img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
-         <select id="filter" class="input"  onchange="toggleFilter()"><dfn title="filter"></dfn>
+        <button id="delete-all" hidden></button>
+                <label for="delete-all" onclick="removeAllTask()"> <dfn title="delete all"> <img src="svg/delete_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></dfn></label>
+         <select id="filter" class="input"  onchange="toggleFilter()">
             <option value="" disabled selected>filter</option>
             <option value="none">none</option>
             <option value="complete">complete</option>
             <option value="incomplete">incomplete</option>
         </select>
-                <label for="filter" ><img src="svg/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label>
-        </dfn>
+                <label for="filter" ><dfn title="filter"><img src="svg/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt=""></dfn></label>
+       
     </div>
     <section id="list-todo">
         <h3>Task List</h3>
